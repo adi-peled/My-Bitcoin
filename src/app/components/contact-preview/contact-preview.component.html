@@ -1,0 +1,8 @@
+<div (click)="selectedContact(contact)" class="contact-preview">
+
+    <img class="contact-img" [src]="'https://robohash.org/'+contact.name" alt="">
+    <span class="name"> {{contact.name}}</span>
+    <img class="delete-img" (click)="removeContact(contact,$event)" src="../../../assets/imgs/trash.svg" alt="">
+
+
+</div>

@@ -1,0 +1,24 @@
+<div class="contact-details max-700">
+
+   <h1 class="title">Contact Details</h1>
+   <div class="contact-detail">
+      <span class="detail">Name:</span>
+      <span class="name"> {{currContact.name}}</span>
+   </div>
+   <div class="contact-detail">
+      <span class="detail">Phone:</span>
+      <span class="phone">{{currContact.phone}}</span>
+   </div>
+   <div class="contact-detail">
+      <span class="detail">Email:</span>
+      <span class="email"> {{currContact.email}}</span>
+   </div>
+
+   <app-transfer-fund (onTransfer)="transferFunds($event)" [currContact]="currContact"></app-transfer-fund>
+   <app-moves-list [moves]="moves"></app-moves-list>
+
+   <button class="bitcoin-btn" routerLink="/contact" routerLinkActive="active"> back</button>
+   <button class="bitcoin-btn" [routerLink]="['/contact/edit/'+currContact._id]"
+      routerLinkActive="router-link-active">Edit</button>
+
+</div>

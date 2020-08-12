@@ -1,0 +1,20 @@
+<div class="moves-list max-700">
+
+    <h3 class="title">Last Moves</h3>
+    <div class="move flex column" *ngFor="let move of moves">
+        <div class="move-detail">
+            <span class="detail white">Transferd to:</span>
+            <span class="to"> {{ move.to}}</span>
+        </div>
+        <div class="move-detail">
+            <span class="detail white">Date:</span>
+            <span class="date"> {{ move.at| date  : 'medium'}}</span>
+        </div>
+        <div class="move-detail">
+            <span class=" detail white"> Amount:</span>
+            <span class="coins"> ₿ {{move.amount}} </span>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+.bitcoin-input {
+
+    color: white;
+    width: 260px;
+    margin-bottom: 6px;
+    border: none;
+    height: 40px;
+    background-color: #101a23;
+    outline: none;
+    border-radius: 3px;
+
+    &::placeholder {
+        font-size: 18px;
+        color: rgb(90, 95, 101);
+    }
+
+    &:focus {
+        color: #ed4e6e;
+    }
+
+}
+
+
+
+.bitcoin-btn {
+    border-radius: 2px;
+    background-color: #ed4e6e;
+    color: white;
+}
